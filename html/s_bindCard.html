@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/sweetAlert.css" type="text/css">
+<link rel="stylesheet" href="css/s_bindCard.css" type="text/css">
+<script data-main="js/s_bindCard.js" src="js/lib/require.js"></script>
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+
+</script>
+<title>绑定银行卡</title>
+</head>
+<body class="bodyBj">
+	<div class="clear_15"></div>
+	<div class="bindCardmain">
+		<div class="bindCardBox">
+			<div class="bindCardtext">开户名：韩东旭</div>
+		</div>
+		<div class="bindCardBox">
+			<div class="bindCardtext">
+				<span>银行卡号</span>
+				<input type="text" id="cardId" onkeyup="this.value=this.value.replace(/\D/g,'').replace(/....(?!$)/g,'$& ')" placeholder="请输入银行卡号" />
+			</div>
+		</div>
+		<div class="bindCardBox">
+			<div class="bindCardtext">
+				<span>充值金额</span>
+				<input type="text" id="moneyNum" placeholder="请输入充值金额" />
+				<i>元</i>
+			</div>
+		</div>
+	</div>
+	<p class="bindcardTip">
+		<span class="bCtipLe">*充值最小金额不得少于0.01元</span>
+		<span class="bCtipRi" id="cardHelp"><font><img src="./images/userCenter/helpIcon.png" /></font>绑卡遇到的问题</span>
+	</p>
+	<div class="bkProtocol">
+		<span class="bkNochecked checked"></span>
+		<span><a href="s_bcAgreement.html">《连连支付认证支付开通协议》</a></span>
+	</div>
+	<button class="bindCardBtn" id="bindCardBtn">确认协议并充值</button>
+
+	<div class="Maskbox"></div>
+	<div class="cardHelp">
+		<div class="helpMain">
+			<p class="helpTitle">绑卡提醒</p>
+			<p class="helpInfo">为使您的投资更加方便快捷，我司的第三方支付平台已全面升级为连连支付，您需要在连连支付平台重新绑定银行卡。如有问题，请咨询客服<a href="tel:400-061-8080">400-061-8080</a></p>
+		</div>
+		<button class="closeBtn">确定</button>
+	</div>
+</body>
+</html>

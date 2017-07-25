@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/financialProductsInfo.css?v=1" type="text/css">
+<link rel="stylesheet" href="css/sweetAlert.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script data-main="js/financialProductsInfo.js" src="js/lib/require.js"></script>
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<title>详情页</title>
+</head>
+<body class="l_NewScroll l_sanbiao"><!--无限额的页面需要给body加class="noLimt" 定向标页面加class="dingxiang" 散标页面加class="l_sanbiao" 转让标加class="l_zhuanrang" -->
+  <h1 class="l_title l_title_person text-overflow">省心计划b-16051279218-43-1440万</h1>
+  <header>
+    <ul>
+      <li class="l_headerInfo1 pjred">
+        <p><i>6</i>%－<i>10</i>%</p>
+        <p>预期年化收益</p>
+      </li>
+      <li class="l_headerInfo2">
+        <p><i class="pjred">6</i>个月</p>
+        <p>省心期</p>
+      </li>
+      <li class="l_headerInfo3">
+        <p><i class="pjred" data-money="500000" id="money">50</i>万元</p>
+        <p>总额度</p>
+      </li>
+      <li class="l_headerInfo4">
+        <p><i class="pjred" data-money="500000" id="money">50</i>万元</p>
+        <p>出借限额</p>
+      </li>
+    </ul>
+    </header>
+    <section class="l_midInfo">
+      <p class="l_incomein"> <!--预热标在此加class="l_incomein" -->
+          <font>预热时间：00:10:00</font>
+          <span class="l_perLine"><i><b>0%</b></i></span>
+          <span class="l_perLineInfo l_Info1" data-hasmoney="300000" id="hasmoney">300,000元</span>
+          <span class="l_perLineInfo l_Info2">200,000元</span>
+      </p>
+      <ul>
+        <li>周期还利息，到期还本金</li>
+        <li>自动投标，回款复投</li>
+        <li>1-12月热门优先标的</li>
+        <li>韩东旭</li>
+      </ul>
+    </section>
+    <p class="l_CheckInfo">查看详情</p>
+    <section class="l_inputBox">
+
+      <p>账户余额：<span class="pjred">329,119,260.22</span>元</p>
+      <p>预期收益：<span class="pjred" id="shouYi">0.00</span>元</p>
+      <input id="moneyInput" class="noNum limitNUM16" type="num" placeholder="起投资金10000元" name="money">
+      <div class="l_inputPassword"><!--定向密码在此 -->
+        <p>此标的为定向标，请输入定向密码</p>
+        <input id="inputPassword" type="text" placeholder="请输入6位密码" name="input" maxlength="6">
+      </div>
+    </section>
+    <p class="l_propto"><i></i><span><a href="javascript:;">《省心计划投资协议》</a></span></p>
+    <button class="l_btn">立即投标</button>
+
+</body>
+</html>

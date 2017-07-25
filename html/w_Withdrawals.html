@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>提现</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/withdrawals.css">
+	<link rel="stylesheet" href="css/sweetAlert.css" type="text/css">
+	<script type="text/javascript">
+	//rem自适应字体大小方法
+	var docEl = document.documentElement,
+	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	recalc = function() {
+	    //设置根字体大小
+	    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+	};
+	//绑定浏览器缩放与加载时间
+	window.addEventListener(resizeEvt, recalc, false);
+	document.addEventListener('DOMContentLoaded', recalc, false);
+	</script>
+</head>
+<body class="l_NewScroll ">
+	<section class="container">
+		<div class="header">
+			<div class="imgBox">
+				<img src="images/livelihood.png" alt="">
+			</div>
+			<div class="bankCard">尾号8888储蓄卡</div>
+		</div>
+		<div class="wrapper">
+			<div class="title">提现金额</div>
+			<div class="moneyBox">
+				<span>￥</span>
+				<input type="tel" class="moeny" id="moeny" name="moeny" maxlength="9">
+			</div>
+			<div class="liner"></div>
+			<div class="balance">
+				<div class="errorPrompt" id="errorPrompt">账户余额￥<span id="exceed">100.62</span></div>
+				<div class="allOut" id="allOut">全部提现</div>
+			</div>
+			<div class="PunchClock">
+				<p>到账金额</p>
+				<p id="Arrival" id="Arrival">0</p>
+			</div>			
+		</div>
+		<div class="pwd_container">
+			<input type="text" class="pwd_frame" id="pwd_frame" name="pwd_frame" placeholder="请输入交易密码">
+		</div>
+		<div class="button_pack">
+			<a href="#" class="sure_Button" id="sure_Button">确认提现</a>
+			<span>每日可提现3次，总额为50万元</span>
+		</div>
+	</section>
+	<script data-main="js/withdrawals.js" src="js/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/payment.css">
+<script data-main="js/payment.js" src="js/lib/require.js"></script>
+<link rel="stylesheet" href="css/sweetAlert.css">
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<title>支付</title>
+</head>
+<body class="l_NewScroll" style="background: #f5f5f5;">
+	<div class="payment-theme">
+		<div class="title">F160512792-1440万个人房抵借款标第六期F160512792-1440万个人房抵借款标第六期...</div>
+		<dl class="amount">
+			<dd class="expect">
+				<p>
+					<span><i>11</i>%+0.5%</span>
+					<span>预期年化利率</span>
+				</p>
+				<p>
+					<span><i>6</i>个月</span>
+					<span>借款期限</span>
+				</p>
+				<p>
+					<span><i class="money">95.5</i>万元</span>
+					<span class="purchase" style="color: #333!important;">购买金额</span>
+				</p>
+			</dd>
+			<dt class="interestRate">
+				<p><span class="month"></span>预期收益：209872.45 元</p>
+			</dt>
+		</dl>
+		<section class="l_checkRewardWay">
+			支付方式：		
+	    </section>
+		<ul class="optionList">
+			<li class="balance">
+				<p>余额支付：</p>
+				<p>(2000.00元可用)</p>
+				<p class="checked1 checked" id="checked"></p>
+			</li>
+			<div class="liner"></div>
+			<li class="Voucher">
+				<p class="spacing">财富券：</p>
+				<p>5张可用</p>
+				<p id="Voucher">未使用</p><!--  没有的时候显示“暂无可用”  -->
+			</li>
+			<div class="liner"></div>
+			<li class="bankcard">
+				<p class="spacing">银行卡：</p>
+				<p class="bankimg">
+					<img src="images/userCenter/yinh_icon.png" alt="">尾号：0966
+				</p>
+				<p class="checked2 checked unchecked" id="checked">
+				</p>
+			</li>
+		</ul>
+		<div class="pwdBox">
+			<div class="pwd-container">
+				<input type="password" class="pwd-number limitNUM16" id="pwd-number" placeholder="请输入支付密码">
+				<span class="eye" id="eye"></span>
+			</div>
+			<div class="forget_pwd">
+				<p></p>
+				<p class="forgetBtn">忘记支付密码?</p>
+			</div>
+		</div>		
+	</div>
+	<div class="Agreement">
+		<p id="Checkbox"></p>
+		<p>同意《出借与咨询服务协议》</p>
+	</div>
+	<a href="#" class="confirm" id="confirm">确定支付</a>
+	<div class="maskBox">
+		<div class="mask">
+			<h2>忘记密码</h2>
+			<article>
+				<p>1.您可以试试登录密码，交易密码默认与登录密码相同</p>
+				<p>2.真的忘记了，您可以点击下方找回密码</p>
+			</article>
+			<a href="http://www.baidu.com">找回密码</a>
+		</div>
+	</div>
+
+
+	<div class="couponList">
+		<div class="page">
+			<h2>优惠券</h2>
+			<ul class="vou_list">
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p class="interest">加息券<span>1%</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p class="interest">加息券<span>1%</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p>财富券<span>100</span>元</p>
+					<a href="#">使用</a>
+				</li>
+				<li>
+					<p class="interest">加息券<span>1%</span>元</p>
+					<a href="#">使用</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/RealNameIdent.css">
+<link rel="stylesheet" href="css/sweetAlert.css">
+<script data-main="js/RealNameIdent.js" src="js/lib/require.js"></script>
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<title>title</title>
+</head>
+<body class="l_NewScroll">
+	<section class="real-theme">
+		<div class="name-box">
+			<span>姓<i>？</i>名</span>
+			<input type="text" placeholder="请输入姓名" class="name-case" id="name-case">
+		</div>
+		<div class="id-box">
+			<span>身份证</span>
+			<input type="text" placeholder="请输入身份证" class="id-case limitNUM18" id="id-case">
+		</div>
+		<a href="javascript:void(0);" class="complete" id="complete">完成</a>
+		<div class="loading" id="loading">
+			<img src="images/loading.gif" alt="">
+		</div>
+	</section>
+</body>
+</html>

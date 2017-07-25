@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/PersonalInformation.css">
+<script data-main="js/about_us.js" src="js/lib/require.js"></script>
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<title>个人信息</title>
+</head>
+<body>
+	<section class="info-theme">
+		<ul class="info-list">
+			<li>
+				<p class="definition">用户名</p>
+				<p class="right-arrow">Xiao xu</p>
+			</li>
+			<li>
+				<p class="definition">姓名</p>
+				<p>小明</p>
+			</li>
+			<li>
+				<p class="definition">手机号</p>
+				<p class="right-arrow immediately">1304567894</p>
+			</li>
+			<li>
+				<p class="definition">省份证</p>
+				<p class="right-arrow immediately">立即认证</p><!--  实名认证显示身份证号，前三位后四位，其他为*;未实名的显示跳转认证链接 -->
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

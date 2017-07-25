@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/s_presentSuccess.css" type="text/css">
+<script type="text/javascript">
+//rem自适应字体大小方法
+var docEl = document.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+    //设置根字体大小
+    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+};
+//绑定浏览器缩放与加载时间
+window.addEventListener(resizeEvt, recalc, false);
+document.addEventListener('DOMContentLoaded', recalc, false);
+</script>
+<title></title>
+</head>
+<body>
+    <img class="l_topimg" src="./images/userCenter/tixianBj.jpg" alt="">
+    <div class="l_midbox">
+        <div class="l_midinfo1">
+            提现申请已提交<br /><span>2016-11-18 08:30</span>
+        </div>
+        <div class="l_midinfo2">
+            预计审核完成<br /><span>2016-11-18 12:30前</span>
+        </div>
+        <div class="l_midinfo3">
+            预计到账时间<br /><span>T+3到账机制</span>
+        </div>
+        <div class="l_midicon1">
+          <span class="iconImg01"></span>
+          <a href=""></a>
+        </div>
+        <div class="l_midicon2">
+          <span class="iconImg02"></span>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        <div class="l_midicon3">
+          <span class="iconImg03"></span>
+        </div>
+    </div>
+    <p class="l_midtip"><i>＊</i>注：T+3到账机制（T为交易日）。申请提现后的第二日起，三个工作日内到账。</p>
+    <p class="l_midtip" style="text-indent:1rem;">如遇节假日，审核和银行处理时间可能会有延迟，请以实际到帐时间为准</p>
+    <button class="madBtn">确定</button>
+</body>
+</html>
